@@ -11,7 +11,7 @@ import { Button } from "./ui/button";
 
 export function MobileNav() {
     const [isOpen, setIsOpen] = useState(false);
-    
+
     const navLinks = [
         { href: "#produtos", label: "Produtos", icon: Package },
         { href: "#precos", label: "Preços", icon: DollarSign },
@@ -19,7 +19,7 @@ export function MobileNav() {
         { href: "#contato", label: "Contato", icon: Phone }]
 
     // const closeMenu = () => setIsOpen(false);
-   
+
     return (
         <div className="md:hidden ">
             <Popover open={isOpen} onOpenChange={setIsOpen}>

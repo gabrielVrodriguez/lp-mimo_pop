@@ -17,7 +17,10 @@ export const metadata: Metadata = {
   title: "Mimo Pop",
   description: "",
   icons: {
-    icon: "/mimo-pop.svg",    
+    icon: {
+      url: "/mimo-pop.svg",
+      sizes: "any",
+    },
   },
 };
 
