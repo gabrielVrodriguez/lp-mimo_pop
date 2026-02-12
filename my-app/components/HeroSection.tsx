@@ -12,7 +12,7 @@ export function HeroSection() {
 
             <BackgroundEffect />
 
-            <div className="container mx-auto px-4 py-24 relative z-10">
+            <div className="container mx-auto px-4 py-8 sm:py-24 relative z-10">
                 <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
                     {/* Badge */}
                     <Badge variant="secondary" className="mb-6 px-4 py-5 text-sm bg-white/90 backdrop-blur border-2 border-primary/20 shadow-lg text-primary font-bold">
