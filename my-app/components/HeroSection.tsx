@@ -1,6 +1,6 @@
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
-import { Sparkles, MessageCircle, Mouse, Phone } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { BackgroundEffect } from "./common/BackgroundEffect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
@@ -9,7 +9,7 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 export function HeroSection() {
     return (
         <section className="relative min-h-full flex overflow-hidden">
-
+            {/*  */}
             <BackgroundEffect />
 
             <div className="container mx-auto px-4 py-8 sm:py-24 relative z-10">
@@ -22,7 +22,7 @@ export function HeroSection() {
 
                     {/* Title */}
                     <h1 className="text-6xl md:text-8xl  font-black mb-6 tracking-tighter">
-                        <span className="bg-linear-to-r from-amber-500 via-orange-400 to-orange-500 
+                        <span className="bg-gradient-to-r from-amber-500 via-orange-400 to-orange-500 
                         bg-clip-text text-transparent drop-shadow-sm">
                             Mimo Pop
                         </span>
@@ -41,24 +41,22 @@ export function HeroSection() {
 
                     {/* CTA Button */}
                     <Button
+                        asChild
                         size="lg"
-                        className="cursor-pointer bg-[#478ce6] hover:bg-[#477eff] text-white text-xl px-10 py-8 h-auto 
+                        className="cursor-pointer bg-[#478ce6] hover:bg-[#477eff]  text-white text-xl px-10 py-8 h-auto 
                         shadow-[0_8px_0_#3864cc] 
-                        active:shadow-none active:translate-y-[6px] 
-                        transition-all duration-300
+                        active:shadow-none active:translate-y-2
+                        transition-all duration-300 ease-in-out
                         rounded-2xl font-black flex items-center gap-4 border-none"
-                                >
-                        <FontAwesomeIcon
-                            icon={faWhatsapp}
-                            style={{ width: '40px', height: '40px' }}
-                        />
-                        <span>QUERO O MEU AGORA!</span>
+                    >
+                        <a href="https://wa.me/13997567987">
+                            <FontAwesomeIcon
+                                icon={faWhatsapp}
+                                style={{ width: '40px', height: '40px' }}
+                            />
+                            QUERO O MEU AGORA!
+                        </a>
                     </Button>
-
-                    {/* Scroll Indicator */}
-                    {/* <div className="mt-16 animate-bounce opacity-50">
-                        <Mouse className="w-8 h-8 text-primary" />
-                    </div> */}
                 </div>
             </div>
         </section>

@@ -120,6 +120,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -127,5 +128,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5rem; /* Evita que o Header fixo cubra o título da seção */
+  scroll-padding-top: 5rem;
+  /* Evita que o Header fixo cubra o título da seção */
 }

@@ -47,8 +47,10 @@ export function MobileNav() {
                         ))}
 
                         <div className="flex items-center w-full gap-2">
-                            <Button className="flex w-full  bg-[#efa21e] hover:bg-[#efa21e] cursor-pointer text-white shadow-lg shadow-[#efa21e]/25">
-                                Orçamento
+                            <Button asChild className="flex w-full  bg-[#efa21e] hover:bg-[#efa21e] cursor-pointer text-white shadow-lg shadow-[#efa21e]/25">
+                                <a href="https://wa.me/13997567987" target="_blank" rel="noopener noreferrer">
+                                    Orçamento
+                                </a>
                             </Button>
                         </div>
                     </nav>
