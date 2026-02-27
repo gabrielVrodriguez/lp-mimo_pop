@@ -1,14 +1,10 @@
-const defaultSignals = [
-    "🎨 Feito à mão",
-    "📦 Envio para todo Brasil",
-    "⭐ +100 clientes felizes",
-]
+import { heroTrustSignals } from "@/data/trust-signals"
 
 interface TrustSignalsProps {
-    signals?: string[]
+  signals?: string[]
 }
 
-export function TrustSignals({ signals = defaultSignals }: TrustSignalsProps) {
+export function TrustSignals({ signals = heroTrustSignals }: TrustSignalsProps) {
     return (
         <div className="flex flex-wrap justify-center gap-4 mt-10">
             {signals.map((item) => (

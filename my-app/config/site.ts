@@ -1,0 +1,12 @@
+export const siteConfig = {
+  name: "Mimo Pop",
+  description: "Transformando memórias em arte. Cada peça é única, feita à mão com amor e dedicação.",
+  slogan: "Presentes que viram memórias",
+  location: "Santos, SP - Brasil",
+  whatsappUrl: "https://wa.me/13997567987",
+  whatsappNumber: "(13) 99756-7987",
+  socialLinks: {
+    instagram: "https://instagram.com/",
+    tiktok: "https://tiktok.com/",
+  },
+} as const

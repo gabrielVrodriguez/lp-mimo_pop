@@ -181,3 +181,49 @@ html {
     background-position: 0% 50%;
   }
 }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.5); }
+}
+
+@keyframes ctaGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes ctaPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@theme inline {
+  /* Design tokens — Mimo Pop brand colors */
+  --color-primary: #F97316;
+  --color-primary-dark: #EA580C;
+  --color-primary-deep: #C2410C;
+  --color-accent-pink: #EC4899;
+  --color-accent-rose: #F43F5E;
+  --color-accent-amber: #F59E0B;
+  --color-accent-violet: #8B5CF6;
+  --color-surface-warm: #FFFBF5;
+  --color-surface-cream: #FFECD2;
+  --color-surface-orange: #FFF7ED;
+  --color-footer-dark: #1C1917;
+  --color-footer-darker: #0C0A09;
+
+  /* Animations */
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-slow: float 8s ease-in-out 1s infinite;
+  --animate-float-slower: float 7s ease-in-out 2s infinite;
+  --animate-float-slowest: float 9s ease-in-out 0.5s infinite;
+  --animate-sparkle: sparkle 3s ease-in-out infinite;
+  --animate-cta-gradient: ctaGradient 8s ease infinite;
+  --animate-cta-pulse: ctaPulse 2s ease-in-out infinite;
+}
