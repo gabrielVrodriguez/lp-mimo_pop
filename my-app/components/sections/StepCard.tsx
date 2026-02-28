@@ -21,7 +21,7 @@ export function StepCardDesktop({ item }: StepCardDesktopProps) {
         </span>
       </div>
       <h3 className="font-bold text-xl mb-2 text-stone-900">{item.title}</h3>
-      <p className="text-sm leading-relaxed text-stone-500 max-w-[200px]">{item.description}</p>
+      <p className="text-sm leading-relaxed text-stone-500 max-w-50">{item.description}</p>
     </div>
   )
 }

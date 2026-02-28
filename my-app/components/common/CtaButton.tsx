@@ -32,8 +32,8 @@ const variantStyles = {
   inverse: `inline-flex items-center gap-3 px-10 py-5 rounded-2xl font-black text-xl no-underline
     bg-white text-rose-500
     shadow-[0_8px_0_rgba(0,0,0,0.15),0_15px_40px_rgba(0,0,0,0.2)]
-    hover:-translate-y-[3px] hover:shadow-[0_12px_0_rgba(0,0,0,0.15),0_20px_50px_rgba(0,0,0,0.25)]
-    active:translate-y-[4px] active:shadow-[0_2px_0_rgba(0,0,0,0.15),0_5px_15px_rgba(0,0,0,0.15)]
+    hover:-translate-y-0.75 hover:shadow-[0_12px_0_rgba(0,0,0,0.15),0_20px_50px_rgba(0,0,0,0.25)]
+    active:translate-y-1 active:shadow-[0_2px_0_rgba(0,0,0,0.15),0_5px_15px_rgba(0,0,0,0.15)]
     transition-all duration-300`,
 }
 

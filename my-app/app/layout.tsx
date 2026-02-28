@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mimo Pop",
+  title: "Mimo Pop - Personalizados",
   description: "",
   icons: {
     icon: {

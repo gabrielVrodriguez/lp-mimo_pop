@@ -15,6 +15,7 @@ import { categories } from "@/data/navigation"
 import type { ProductCategory } from "@/types"
 import { ProductCard } from "./ProductCard"
 import { CategoryFilter } from "./CategoryFilter"
+import { ScrollReveal } from "@/components/common/ScrollReveal"
 
 export function ProductCarrousel() {
   const [activeCategory, setActiveCategory] = useState<ProductCategory>("todos")
@@ -32,7 +33,9 @@ export function ProductCarrousel() {
     setApi(newApi)
     setCount(newApi.scrollSnapList().length)
     setCurrent(newApi.selectedScrollSnap())
-    newApi.on("select", () => setCurrent(newApi.selectedScrollSnap()))
+    const onSelect = () => setCurrent(newApi.selectedScrollSnap())
+    newApi.on("select", onSelect)
+    return () => newApi.off("select", onSelect)
   }, [])
 
   const handleCategoryChange = (category: ProductCategory) => {
@@ -51,24 +54,28 @@ export function ProductCarrousel() {
       </div>
 
       <div className="container relative z-10 mx-auto px-4">
-        <div className="mb-12 text-center">
-          <h2 className="mb-5 text-4xl font-black tracking-tight md:text-6xl">
-            Nossos{" "}
-            <span className="bg-linear-to-r from-orange-500 via-orange-500 to-amber-500 bg-clip-text text-transparent">
-              mimos
-            </span>{" "}
-            incríveis
-          </h2>
-          <p className="mx-auto max-w-2xl text-lg font-medium text-stone-500 md:text-xl">
-            Cada peça é única, feita à mão com amor.
-          </p>
-        </div>
+        <ScrollReveal direction="up" duration={700}>
+          <div className="mb-12 text-center">
+            <h2 className="mb-5 text-4xl font-black tracking-tight md:text-6xl">
+              Nossos{" "}
+              <span className="bg-linear-to-r from-orange-500 via-orange-500 to-amber-500 bg-clip-text text-transparent">
+                mimos
+              </span>{" "}
+              incríveis
+            </h2>
+            <p className="mx-auto max-w-2xl text-lg font-medium text-stone-500 md:text-xl">
+              Cada peça é única, feita à mão com amor.
+            </p>
+          </div>
+        </ScrollReveal>
 
-        <CategoryFilter
-          categories={categories}
-          activeCategory={activeCategory}
-          onCategoryChange={handleCategoryChange}
-        />
+        <ScrollReveal direction="up" delay={150} duration={600}>
+          <CategoryFilter
+            categories={categories}
+            activeCategory={activeCategory}
+            onCategoryChange={handleCategoryChange}
+          />
+        </ScrollReveal>
 
         <Carousel
           setApi={onApiChange}
@@ -89,29 +96,33 @@ export function ProductCarrousel() {
           <CarouselNext className="hidden md:flex -right-6 bg-white/90 border-0 shadow-xl" />
         </Carousel>
 
-        <div className="mt-8 flex justify-center gap-2">
-          {[...Array(count)].map((_, i) => (
-            <button
-              key={i}
-              onClick={() => api?.scrollTo(i)}
-              className={`h-2.5 rounded-full transition-all duration-300 
-                ${current === i
-                  ? "w-8 bg-linear-to-r from-orange-500 to-orange-600 shadow-md"
-                  : "w-2.5 bg-stone-300"
-                }`}
-            />
-          ))}
-        </div>
+        <ScrollReveal direction="up" delay={400} duration={600}>
+          <div className="mt-8 flex justify-center gap-2">
+            {[...Array(count)].map((_, i) => (
+              <button
+                key={i}
+                onClick={() => api?.scrollTo(i)}
+                className={`h-2.5 rounded-full transition-all duration-300 
+                  ${current === i
+                    ? "w-8 bg-linear-to-r from-orange-500 to-orange-600 shadow-md"
+                    : "w-2.5 bg-stone-300"
+                  }`}
+              />
+            ))}
+          </div>
+        </ScrollReveal>
 
-        <p className="text-center mt-10 text-sm font-medium text-stone-400">
-          💡 Valores podem variar de acordo com a complexidade do projeto.{" "}
-          <a
-            href={siteConfig.whatsappUrl}
-            className="underline decoration-dotted text-orange-500 hover:text-orange-700 transition-colors duration-200"
-          >
-            Fale conosco!
-          </a>
-        </p>
+        <ScrollReveal direction="up" delay={500} duration={600}>
+          <p className="text-center mt-10 text-sm font-medium text-stone-400">
+            💡 Valores podem variar de acordo com a complexidade do projeto.{" "}
+            <a
+              href={siteConfig.whatsappUrl}
+              className="underline decoration-dotted text-orange-500 hover:text-orange-700 transition-colors duration-200"
+            >
+              Fale conosco!
+            </a>
+          </p>
+        </ScrollReveal>
       </div>
     </section>
   )

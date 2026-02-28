@@ -36,7 +36,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 bg-white/[0.08] text-white/50 hover:bg-[linear-gradient(135deg,var(--color-primary),var(--color-primary-dark))] hover:text-white hover:-translate-y-0.5 hover:shadow-[0_4px_15px_rgba(249,115,22,0.3)]"
+                  className="w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 bg-white/8 text-white/50 hover:bg-[linear-gradient(135deg,var(--color-primary),var(--color-primary-dark))] hover:text-white hover:-translate-y-0.5 hover:shadow-[0_4px_15px_rgba(249,115,22,0.3)]"
                 >
                   <social.icon className="w-4.5 h-4.5" />
                 </a>
