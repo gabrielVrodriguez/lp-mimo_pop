@@ -79,7 +79,7 @@ npm run dev
 npm run build
 ```
 
-Acesse [http://localhost:3001](http://localhost:3001).
+Acesse https://lp-mimo-pop.vercel.app/
 
 ---
 
