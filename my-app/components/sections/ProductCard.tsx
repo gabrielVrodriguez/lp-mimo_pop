@@ -18,7 +18,7 @@ export function ProductCard({ product }: ProductCardProps) {
         />
         {product.tag && (
           <div
-            className={`absolute left-4 top-4 rounded-full px-3 py-1.5 text-xs font-bold text-white shadow-lg bg-linear-to-br ${tagColorMap[product.tagColor || "orange"]}`}
+            className={`absolute left-4 top-4 rounded-full px-3 py-1.5 text-xs font-bold ${product.tagColor === 'black' ? 'text-[#ffb31a]' : 'text-white'} shadow-lg bg-linear-to-br ${tagColorMap[product.tagColor || "orange"]} `}
           >
             {product.tag}
           </div>

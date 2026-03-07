@@ -18,6 +18,8 @@ export type ProductCategory =
   | "action"
   | "pets"
   | "profissoes"
+  | "casamentos"
+  | "familia"
 
 export interface Product {
   id: number
