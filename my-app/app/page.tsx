@@ -5,7 +5,9 @@ import { HowItWorks } from "@/components/sections/HowItWorks";
 import { CtaSection } from "@/components/sections/CtaSection";
 import { Footer } from "@/components/layout/Footer";
 
+
 export default function Page() {
+
     return (
         <>
             <Header />
@@ -16,4 +18,4 @@ export default function Page() {
             <Footer />
         </>
     );
-}
+};

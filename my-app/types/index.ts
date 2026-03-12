@@ -27,6 +27,7 @@ export interface Product {
   price: string
   image: string
   category: ProductCategory
+  cloudinaryId?: string
   tag?: string
   tagColor?: string
   rating: number
