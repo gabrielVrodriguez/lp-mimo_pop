@@ -22,7 +22,7 @@ export function Header() {
     >
       <div className="w-full max-w-7xl mx-auto flex h-14 items-center px-6 justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <Image src="./mimo-pop.svg" alt="Logo" width={60} height={60} />
+          <Image src="./mimo-pop.svg" alt="Logo" width={60} height={60} priority />
         </Link>
 
         <nav className="hidden md:flex items-center gap-1">

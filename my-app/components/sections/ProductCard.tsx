@@ -9,17 +9,16 @@ interface ProductCardProps {
 
 export function ProductCard({ product }: ProductCardProps) {
   const cloudinaryId = product.cloudinaryId
-  const imageProps = cloudinaryId
-    ? { loader: cloudinaryLoader, src: cloudinaryId }
-    : { src: product.image }
 
   return (
     <div className="group h-full rounded-3xl border border-white/60 bg-white/80 p-0 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/15 backdrop-blur-xl">
       <div className="relative aspect-square overflow-hidden rounded-t-3xl bg-linear-to-br from-amber-100 via-amber-200 to-amber-400">
         <Image
-          {...imageProps}
+          loader={cloudinaryLoader}
           alt={product.name}
           fill
+          src={cloudinaryId ||   "placeholder"}
+          sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
           className="object-contain p-6 transition-transform duration-700 group-hover:scale-110 group-hover:rotate-3"
         />
         {product.tag && (

@@ -5,7 +5,7 @@ import "./globals.css";
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
 });
 
 const geistMono = Geist_Mono({
@@ -19,10 +19,12 @@ export const metadata: Metadata = {
   icons: {
     icon: {
       url: "/mimo-pop.svg",
-      sizes: "any",
+      // sizes: "600x600",
     },
   },
 };
+
+
 
 export default function RootLayout({
   children,

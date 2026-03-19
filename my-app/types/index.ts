@@ -25,7 +25,6 @@ export interface Product {
   id: number
   name: string
   price: string
-  image: string
   category: ProductCategory
   cloudinaryId?: string
   tag?: string
