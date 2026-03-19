@@ -7,7 +7,6 @@ import type { SocialLink } from "@/types"
 const socialLinks: SocialLink[] = [
   { icon: InstagramIcon, href: siteConfig.socialLinks.instagram, label: "Instagram" },
   { icon: WhatsAppIcon, href: siteConfig.whatsappUrl, label: "WhatsApp" },
-  { icon: TikTokIcon, href: siteConfig.socialLinks.tiktok, label: "TikTok" },
 ]
 
 export function Footer() {

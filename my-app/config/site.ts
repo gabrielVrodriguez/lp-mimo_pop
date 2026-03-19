@@ -6,7 +6,6 @@ export const siteConfig = {
   whatsappUrl: "https://wa.me/13997567987",
   whatsappNumber: "(13) 99756-7987",
   socialLinks: {
-    instagram: "https://instagram.com/",
-    tiktok: "https://tiktok.com/",
+    instagram: "https://www.instagram.com/_mimopop/",
   },
 } as const
