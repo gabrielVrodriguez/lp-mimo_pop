@@ -1,6 +1,25 @@
 import type { Metadata } from "next";
 import { Poppins as FontSans, Geist_Mono } from "next/font/google";
+import { siteConfig } from "@/config/site";
 import "./globals.css";
+
+const seoDescription =
+  "Presentes personalizados em Santos, SP: Funkos customizados, action figures, miniaturas de casal, casamento e pets feitos a mao sob encomenda.";
+
+const seoKeywords = [
+  "presentes personalizados",
+  "presentes personalizados em Santos",
+  "funko personalizado",
+  "funko customizado",
+  "funko sob encomenda",
+  "action figure personalizada",
+  "miniatura personalizada",
+  "presente para casal",
+  "presente de casamento personalizado",
+  "miniatura de pet personalizada",
+  "presente criativo artesanal",
+  "Mimo Pop",
+];
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -14,8 +33,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mimo Pop - Personalizados",
-  description: "",
+  metadataBase: new URL(siteConfig.url),
+  title: "Mimo Pop | Funkos e Presentes Personalizados",
+  description: seoDescription,
+  keywords: seoKeywords,
   icons: {
     icon: {
       url: "/mimo-pop.svg",

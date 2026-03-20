@@ -1,5 +1,6 @@
 export const siteConfig = {
   name: "Mimo Pop",
+  url: "https://lp-mimo-pop.vercel.app",
   description: "Transformando memórias em arte. Cada peça é única, feita à mão com amor e dedicação.",
   slogan: "Presentes que viram memórias",
   location: "Santos, SP - Brasil",
