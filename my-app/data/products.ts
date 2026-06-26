@@ -4,7 +4,7 @@ export const funkos: Product[] = [
   {
     id: 1,
     name: "Funko Individual",
-    price: "R$ 139,99",
+    price: "R$ 159,99",
     cloudinaryId: "solo_yfq89h",
     category: "funkos",
     tag: "Funko Simples",
@@ -15,7 +15,7 @@ export const funkos: Product[] = [
   {
     id: 2,
     name: "Funko Solo Premium ",
-    price: "R$ 149,99",
+    price: "R$ 169,99",
     cloudinaryId: "funko-solo-premium",
     category: "funkos",
     tag: "Funko Premium",
@@ -26,7 +26,7 @@ export const funkos: Product[] = [
   {
     id: 3,
     name: "Funko Solo + Pet",
-    price: "R$ 164,99",
+    price: "R$ 184,99",
     cloudinaryId: "solo3_pr5c89",
     category: "funkos",
     tag: "Funko Individual",
@@ -37,7 +37,7 @@ export const funkos: Product[] = [
   {
     id: 4,
     name: "Funko Masterpiece",
-    price: "R$ 429,99",
+    price: "R$ 459,99",
     cloudinaryId: "funko_solo_masterpiece",
     category: "funkos",
     tag: "Funko Masterpiece",
@@ -51,7 +51,7 @@ export const casamentos: Product[] = [
   {
     id: 5,
     name: "Casamento Estilo Pixar",
-    price: "R$ 289,00",
+    price: "R$ 309,99",
     cloudinaryId: "casamento-pixar",
     category: "casamentos",
     tag: "Casamento Pixar",
@@ -62,7 +62,7 @@ export const casamentos: Product[] = [
   {
     id: 6,
     name: "Casamento Funko",
-    price: "R$ 289,00",
+    price: "R$ 309,99",
     cloudinaryId: "casamento-funko",
     category: "casamentos",
     tag: "Casamento Funko",
@@ -73,7 +73,7 @@ export const casamentos: Product[] = [
   {
     id: 7,
     name: "Casamento Premium",
-    price: "R$ 299,00",
+    price: "R$ 319,99",
     cloudinaryId: "casamento-premium",
     category: "casamentos",
     tag: "Casamento Premium",
@@ -84,7 +84,7 @@ export const casamentos: Product[] = [
   {
     id: 14,
     name: "Casamento Masterpiece",
-    price: "R$ 489,00",
+    price: "R$ 489,99",
     cloudinaryId: "casamento-masterpieces",
     category: "casamentos",
     tag: "Casamento Masterpiece",
@@ -98,7 +98,7 @@ export const casais: Product[] = [
    {
     id: 8,
     name: "Casal Funko",
-    price: "R$ 259,00",
+    price: "R$ 279,99",
     cloudinaryId: "casal-funko-simples",
     category: "casais",
     tag: "Casal Funko Simples",
@@ -109,7 +109,7 @@ export const casais: Product[] = [
    {
     id: 19,
     name: "Casal Funko",
-    price: "R$ 259,00",
+    price: "R$ 279,99",
     cloudinaryId: "casal-line",
     category: "casais",
     tag: "Casal Funko Simples",
@@ -120,7 +120,7 @@ export const casais: Product[] = [
   {
     id: 9,
     name: "Casal Funko Premium",
-    price: "R$ 279,00",
+    price: "R$ 289,99",
     cloudinaryId: "casal-pose",
     category: "casais",
     tag: "Casal Funko Premium",
@@ -131,7 +131,7 @@ export const casais: Product[] = [
   {
     id: 10,
     name: "Casal Pixar Premium",
-    price: "R$ 279,00",
+    price: "R$ 289,99",
     cloudinaryId: "casal-pixar",
     category: "casais",
     tag: "Casal Pixar Premium",
@@ -146,7 +146,7 @@ export const actionFigures: Product[] = [
   {
     id: 11,
     name: "Action Figure",
-    price: "R$ 219,00",
+    price: "R$ 319,99",
     cloudinaryId:"action-friends",
     category: "action",
     tag: "Action Figure",
@@ -157,7 +157,7 @@ export const actionFigures: Product[] = [
   {
     id: 12,
     name: "Action Figure",
-    price: "R$ 219,00",
+    price: "R$ 319,99",
     cloudinaryId: "action_gzuezm",
     category: "action",
     tag: "Action Figure",
@@ -168,7 +168,7 @@ export const actionFigures: Product[] = [
   {
     id: 13,
     name: "Action Figure",
-    price: "R$ 219,00",
+    price: "R$ 319,99",
     cloudinaryId: "actionFigure_o4y4pt",
     category: "action",
     tag: "Action Figure",
@@ -179,7 +179,7 @@ export const actionFigures: Product[] = [
   {
     id: 20,
     name: "Action Figure",
-    price: "R$ 219,00",
+    price: "R$ 319,99",
     cloudinaryId: "actionAnime_dwois0",
     category: "action",
     tag: "Action Figure",
@@ -193,7 +193,7 @@ export const pets: Product[] = [
    {
     id: 17,
     name: "Funko Pet",
-    price: "R$ 139,99",
+    price: "R$ 169,99",
     cloudinaryId: "funko-pet-simples",
     category: "pets",
     tag: "Funko Pet Simples",
@@ -205,7 +205,7 @@ export const pets: Product[] = [
   {
     id: 16,
     name: "Funko Pets",
-    price: "R$ 199,00",
+    price: "R$ 229,99",
     cloudinaryId: "funko-pets",
     category: "pets",
     tag: "Funko Pet Premium",
@@ -217,7 +217,7 @@ export const pets: Product[] = [
   {
     id: 18,
     name: "Pixar Pets",
-    price: "R$ 219,00",
+    price: "R$ 249,99",
     cloudinaryId: "pixar-petss",
     category: "pets",
     tag: "Pixar Pet Premium",
@@ -228,7 +228,7 @@ export const pets: Product[] = [
   {
     id: 15,
     name: "Pixar Pet + Baby",
-    price: "R$ 219,00",
+    price: "R$ 249,99",
     cloudinaryId: "pixar-pet-babys",
     category: "pets",
     tag: "Pixar Pet Premium",
@@ -242,7 +242,7 @@ export const family: Product[] = [
   {
     id: 21,
     name: "Funko em Família",
-    price: "R$ 599,99",
+    price: "R$ 679,99",
     cloudinaryId: "family_p79ifc",
     category: "familia",
     tag: "Familia Grande",
@@ -253,7 +253,7 @@ export const family: Product[] = [
   {
     id: 22,
     name: "Funko Familia + Pet",
-    price: "R$ 399,99",
+    price: "R$ 469,99",
     cloudinaryId: "family-2_w22qui",
     category: "familia",
     tag: "Familia Completa",
